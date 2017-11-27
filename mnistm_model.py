@@ -24,6 +24,7 @@ def max_pool_2x2(x):
 class Model:
     def __init__(self, x, y_):
 
+        self.x = x # input placeholder
         self.X = x
         self.y = y_
 
