@@ -61,7 +61,7 @@ class Model:
 
         self.y = tf.matmul(h1,W2) + b2 # output layer
 
-        self.var_list = [W0, b0, W1, b1, W2, b2]
+        self.var_list = [W_conv0, b_conv0, W_conv1, b_conv1, W0, b0, W1, b1, W2, b2]
 
         # vanilla single-task loss
         self.cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=y_, logits=self.y))
